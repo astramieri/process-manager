@@ -1,6 +1,5 @@
 create or replace type body t_process
 is 
-
     member procedure initialize(p_thread_id in number)
     is
     begin
