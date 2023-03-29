@@ -1,9 +1,9 @@
 create or replace type t_process as object (
-    v_process_id  number,
+    v_process_id number,
   
     member procedure initialize(p_thread_id in number),
   
-     member procedure iterate(p_thread_id in number),
+    member procedure iterate(p_thread_id in number),
   
     member procedure finalize(p_thread_id in number),
 
@@ -14,4 +14,3 @@ create or replace type t_process as object (
 not instantiable
 not final
 ;
-/
