@@ -1,0 +1,34 @@
+create or replace type body t_process
+is 
+
+    member procedure initialize(p_thread_id in number)
+    is
+    begin
+        null;
+    end initialize;
+    
+    member procedure iterate(p_thread_id in number)
+    is
+    begin
+        null;
+    end iterate;
+    
+    member procedure finalize(p_thread_id in number)
+    is
+    begin
+        null;
+    end finalize;
+
+    member procedure schedule_chain(p_plsql_unit in varchar2 default null)
+    is
+    begin    
+        null;
+    end schedule_chain;
+  
+    member procedure run_chain
+    is
+    begin
+        null;
+    end run_chain;
+end;
+/
